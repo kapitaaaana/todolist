@@ -1,0 +1,58 @@
+
+.auth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.auth .form,
+.auth .intro {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth .intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.473));
+  
+  color: white !important;
+}
+.auth .intro h1 {
+  font-size: 5rem;
+}
+
+.auth .form form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.auth .form form input {
+  font-size: 1.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: solid black 1px;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+}
+.auth .form form button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 51, 0);
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .auth .intro {
+    display: none;
+  }
+
+  .auth .form {
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.473));
+      
+    color: white !important;
+  }
+}
